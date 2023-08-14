@@ -1,6 +1,6 @@
 import * as THREE from 'https://unpkg.com/three@^0.155.0/build/three.module.js'
 import { GLTFLoader } from './Demo/GLTFLoader.js'
-import { PointerLockControls } from './Demo/PointerLockControls'
+import { PointerLockControls } from './Demo/PointerLockControls.js'
 import gsap from 'gsap'
 
 const sizes = {
