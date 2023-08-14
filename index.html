@@ -5,11 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    Hello! My name is Sunny.
-    <img src="https://drive.google.com/uc?export=view&id=1WeeDqHFeQt-HTWSviixKM3hCtLRTlzgK" alt="Sunny Kumar"/>
+    <header>
+        <section class="header">
+            <script src="./main.js"></script>
+            <div class="navbar">
+                <a href="./index.html"><img class="log" src="./img/logo.png" alt="logo"></a>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#Testimonal">TESTIMONALS</a></li>
+                    <!-- <li><a href="">BLOG</a></li> -->
+                    <li><a href="#cta">APPLY</a></li>
+                </ul>
+            </div>
+            <div class="headtext">
+                <span id="Make"></span>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#Make', {
+                        strings: ["Dazzling Dimensions", 'Take Advertisment To Next Level', 'Advertise Your Properties In 3D'],
+                        loop: true,
+                        typeSpeed: 65,
+                        backSpeed: 80,
+                    });
+                </script>
+                <p class="fade-in">Increase Your Trade With Dazzling Dimensions</p>
+                <a href="./Demo/demo.html" target="_blank" class="Visit-btn">SEE DEMO</a>
+            </div>
+    </header>
+
+    </section>
+    <!-- about section -->
+    <section id="about" class="main">
+        <h1 class="fade-in">About us</h1>
+        <p class="fade-in">We Provide 3D Modeling Of Houses/Park/Apartments/Mall/ETC For Its Advertisment</p>
+        <div class="project">
+            <div class="project1">
+                <h3 class="fade-in">Residental Buildings</h3>
+                <p class="fade-in">Showing 3D Models Of Residental Buldings Gives Good Idea Of Structure And Size Of The
+                    Building.Increasing The Chances Of Sells.</p>
+            </div>
+            <div class="project1">
+                <h3 class="fade-in">Parks And Malls</h3>
+                <p class="fade-in">How Professional It Is To Show Parks And Malls In 3D For Advertisment? Yeah! Its
+                    Great. </p>
+            </div>
+            <div class="project1">
+                <h3 class="fade-in">Any other </h3>
+                <p class="fade-in">There Are Many Other Things Which Will Give Great Impact If Designed In 3D.Feel Free
+                    To Contact Us. </p>
+            </div>
+        </div>
+    </section>
+    <!-- testmoinal -->
+    <section id="Testimonal" class="Testimonal">
+        <h1 class="fade-in">Here Is What Our Costumer Says</h1>
+        <p class="fade-in">REVIEWS</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="./img/user1.jpg" alt="">
+                <div>
+                    <p class="fade-in">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, illum sunt? Natus sint velit
+                        sit minima unde pariatur dolores officia quod soluta nostrum alias error, voluptatum vel maiores
+                        sequi nobis!
+                    </p>
+                    <br>
+                    <h3>User1</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="./img/user2.jpg" alt="">
+                <div>
+                    <p class="fade-in">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, illum sunt? Natus sint velit
+                        sit minima unde pariatur dolores officia quod soluta nostrum alias error, voluptatum vel maiores
+                        sequi nobis!
+                    </p>
+                    <br>
+                    <h3>User2</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="./sub web/project 2/review.html" class="exp-btn">WRITE YOUR EXPERIENCE</a>
+    </section>
+
+    <!-- teaminfo -->
+    <section id="cta" class="cta">
+        <h1 class="fade-in">Want To Avertise In 3D?</h1>
+        <br>
+        <a href="./sub web/project 2/form.html" target="_blank">CONTACT Us</a>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
 </body>
 
 </html>
