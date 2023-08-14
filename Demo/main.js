@@ -1,5 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@^0.155.0/build/three.module.js'
-import { GLTFLoader } from 'three/loaders/GLTFLoader.js'
+import { GLTFLoader } from './Demo/GLTFLoader.js'
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls'
 import gsap from 'gsap'
 
