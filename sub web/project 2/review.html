@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="review.css">
+  <title>Write a Review</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Write a Review</h1>
+    <form id="reviewForm" action="https://formsubmit.co/dubeyanuj38802l@gmail.com" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select a rating</option>
+        <option value="5">5 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="2">2 Stars</option>
+        <option value="1">1 Star</option>
+      </select>
+      
+      <label for="review">Your Review:</label>
+      <textarea id="review" name="review" rows="4" required></textarea>
+      
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+</body>
+</html>
