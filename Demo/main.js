@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from 'https://unpkg.com/three@^0.155.0/build/three.module.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls'
